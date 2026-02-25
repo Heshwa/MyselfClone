@@ -1,0 +1,10 @@
+data/
+extracted_chats/
+finetuning_dataset.jsonl
+*.zip
+adapters/
+outputs/
+.DS_Store
+train_mlx.jsonl
+valid_mlx.jsonl
+/tmp/
