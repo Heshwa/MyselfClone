@@ -9,7 +9,14 @@ This repository contains the tools and guides to fine-tune a Large Language Mode
 
 ## Quick Start
 
-### 1. Data Preparation
+### 1. Environment Setup
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+### 2. Data Preparation
 1.  Place your exported WhatsApp `.zip` files in the `data/` folder.
 2.  Run the extraction command:
     ```bash
