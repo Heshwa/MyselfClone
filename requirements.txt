@@ -1,0 +1,17 @@
+# Data Preprocessing
+pathlib
+zipfile36; python_version < '3.6'
+jsonlines
+
+# Fine-Tuning (NVIDIA / L40S)
+unsloth
+torch
+transformers
+trl
+peft
+accelerate
+bitsandbytes
+wandb
+
+# Fine-Tuning (Apple Silicon / M1) - Optional
+# mlx-lm
