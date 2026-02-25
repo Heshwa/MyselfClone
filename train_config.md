@@ -1,9 +1,17 @@
-# Fine-Tuning Your "Second Brain" Assistant
-
-With your `finetuning_dataset.jsonl` ready, you can now start the training process. I recommend using **Unsloth**, as it makes fine-tuning 2x faster and uses 70% less memory.
-
 ## 1. Environment Setup
-You can run this on **Google Colab (Free T4 GPU)** or locally if you have an NVIDIA GPU (12GB+ VRAM recommended).
+*   **High-End GPU (Recommended)**: NVIDIA L40S, A100, or H100.
+*   **WandB**: Create an account at [wandb.ai](https://wandb.ai) and run `wandb login` in your terminal.
+
+## 2. L40S Optimized Script (`train_l40s.py`)
+I have created a specialized script for the L40S that enables:
+*   **Flash Attention 2**: For significantly faster training.
+*   **bf16 Support**: Higher precision training than standard fp16.
+*   **WandB Logging**: Live monitoring of your loss and gradients.
+
+### Run Command:
+```bash
+python3 train_l40s.py
+```
 
 ### Installation
 ```bash
